@@ -144,17 +144,6 @@ namespace ORMPerformance.Services
         // update
         public async Task UpdateCustomerAsync(int customerId)
         {
-            //var customer = new Customer
-            //{
-            //    Id = customerId,
-            //    Name = "ef update",
-            //    ContactName = "ef update ef update ef update",
-            //    Email = "efupdate@ef.ef",
-            //    ContactPhone = "000000000",
-            //    CreateUserId = 1,
-            //    UpdateUserId = 1
-            //};
-
             var customer = await _unitOfWork.CustomerRepository.Table
                 .SingleOrDefaultAsync(x => x.Id == customerId);
 
