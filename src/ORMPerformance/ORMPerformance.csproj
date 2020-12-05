@@ -1,0 +1,66 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200910163448_test.cs" />
+    <Compile Remove="Migrations\20200910163448_test.Designer.cs" />
+    <Compile Remove="Migrations\20200910170110_test.cs" />
+    <Compile Remove="Migrations\20200910170110_test.Designer.cs" />
+    <Compile Remove="Migrations\20200911143622_AddEntities.cs" />
+    <Compile Remove="Migrations\20200911143622_AddEntities.Designer.cs" />
+    <Compile Remove="Migrations\20200911144629_AddEntities.cs" />
+    <Compile Remove="Migrations\20200911144629_AddEntities.Designer.cs" />
+    <Compile Remove="Migrations\20200911170438_AddEntities.cs" />
+    <Compile Remove="Migrations\20200911170438_AddEntities.Designer.cs" />
+    <Compile Remove="Migrations\20200912133940_AddEntities.cs" />
+    <Compile Remove="Migrations\20200912133940_AddEntities.Designer.cs" />
+    <Compile Remove="Migrations\20200920174519_test123.cs" />
+    <Compile Remove="Migrations\20200920174519_test123.Designer.cs" />
+    <Compile Remove="Migrations\20201014115317_AddUserEncryption.cs" />
+    <Compile Remove="Migrations\20201014115317_AddUserEncryption.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.0.1" />
+    <PackageReference Include="BenchmarkDotNet" Version="0.12.1" />
+    <PackageReference Include="Dapper" Version="2.0.35" />
+    <PackageReference Include="Dapper.Mapper" Version="2.0.0" />
+    <PackageReference Include="Dapper.SqlBuilder" Version="2.0.35" />
+    <PackageReference Include="DapperExtensions" Version="1.6.3" />
+    <PackageReference Include="EFCore.BulkExtensions" Version="3.1.5" />
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="EntityFrameworkCore.DataEncryption" Version="1.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.7" />
+    <PackageReference Include="NHibernate" Version="5.3.3" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+    <PackageReference Include="Z.EntityFramework.Extensions" Version="4.0.93" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Extensions\" />
+  </ItemGroup>
+
+</Project>
